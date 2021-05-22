@@ -12,7 +12,7 @@ num_times_executed = 0
 def send_simple_message(text):
 	return requests.post(
 		"https://api.mailgun.net/v3/sandboxaf972e30c0a74fa7bf7771702ccefc58.mailgun.org/messages",
-		auth=("api", "498d333d2f0562def4575efade539d26-6ae2ecad-849bb69b"),
+		auth=("api", api_key),
 		data={"from": from_email,
 			"to": to_email,
 			"subject": "Vaccine availability Notice",
